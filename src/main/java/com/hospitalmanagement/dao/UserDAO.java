@@ -3,6 +3,8 @@
  */
 package com.hospitalmanagement.dao;
 
+import java.util.List;
+
 import com.hospitalmanagement.model.User;
 
 /**
@@ -11,4 +13,5 @@ import com.hospitalmanagement.model.User;
  */
 public interface UserDAO {
 	public User createUser(User user);
+	public List<User> readUser();
 }

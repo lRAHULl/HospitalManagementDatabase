@@ -1,9 +1,10 @@
 package com.hospitalmanagement.model;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class User {
 	private int userId;
+	private int userRoleId;
 	private String userFirstname;
 	private String userLastname;
 	private int userAge;
@@ -17,11 +18,17 @@ public class User {
 	private Date userUpdatedOn;
 	
 
-	public int getUsertId() {
+	public int getUserId() {
 		return userId;
 	}
-	public void setUsertId(int usertId) {
-		this.userId = usertId;
+	public void setUserId(int userId) {
+		this.userId = userId;
+	}
+	public int getUserRoleId() {
+		return userRoleId;
+	}
+	public void setUserRoleId(int userRoleId) {
+		this.userRoleId = userRoleId;
 	}
 	public String getUserFirstname() {
 		return userFirstname;
@@ -89,8 +96,8 @@ public class User {
 	public void setUserUpdatedOn(Date userUpdatedOn) {
 		this.userUpdatedOn = userUpdatedOn;
 	}
-	@Override
-	public String toString() {
+
+	public String userToString() {
 		return "User [usertId=" + userId + ", userFirstname=" + userFirstname + ", userLastname=" + userLastname
 				+ ", userAge=" + userAge + ", username=" + username + ", userPassword=" + userPassword + ", is_active="
 				+ isActive + ", userStreet=" + userStreet + ", userCity=" + userCity + ", userState=" + userState

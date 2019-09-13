@@ -1,6 +1,6 @@
 package com.hospitalmanagement.dao.connection;
 
-import static com.hospitalmanagement.dao.constants.PatientDAOConstants.*;
+import static com.hospitalmanagement.dao.constants.DAOConstants.*;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
